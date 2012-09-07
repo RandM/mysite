@@ -1,12 +1,26 @@
 /*
 Randall Mathews
 MIU 1209
-Week 1 Project 1
-08/30/2012
+Week 2 Project 2
+09/06/2012
 */
 
 
 
+.ui-page { 
+-webkit-backface-visibility: hidden; 
+} 
+
+.ui-page { 
+background: #346699;
+}
+
+.ui-content { 
+background: #346699;
+}
+
+
+/*
 body{
  background-color: #346699;
 }
