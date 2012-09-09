@@ -19,6 +19,10 @@ background: #346699;
 background: #346699;
 }
 
+.ui-block-a {
+background: red;
+}
+
 
 /*
 body{
