@@ -1,8 +1,9 @@
 /*
 Randall Mathews
 MIU 1209
-Week 1 Project 1
-08/30/2012
+Week 3 Project 3
+09/13/2012
+Gold
 */
 
 //Wait until DOM is ready.
@@ -40,7 +41,7 @@ window.addEventListener("DOMContentLoaded", function(){
 }
 			getCheckboxValue();
 			var item 						= {};
-				item.sextype 				= ["Sex Type:" , $('sexTypes').value];
+				item.sextype 				= ["Gender:" , $('sexTypes').value];
 				item.patientFirst 			= ["First Name:" , $('patientFirst').value];
 				item.patientLast 			= ["Last Name:" , $('patientLast').value];
 				item.patientAge 			= ["Age of Patient:" , $('patientAge').value];
@@ -149,7 +150,7 @@ window.addEventListener("DOMContentLoaded", function(){
 				$('patientFirst').value			= item.patientFirst[1];
 				$('patientLast').value 			= item.patientLast[1];
 				$('patientAge').value 			= item.patientAge[1];
-				$('patientDate').value 		= item.patientDate[1];
+				$('patientDate').value 			= item.patientDate[1];
 				$('drugAllergies').value 		= item.drugAllergies[1];			
 				$('curMeds').value 				= item.curMeds[1];
 				$('doseMg').value 				= item.doseMg[1];
@@ -170,40 +171,40 @@ window.addEventListener("DOMContentLoaded", function(){
 				var getPatientLast = $('patientLast');
 				var getDrugAllergies = $('drugAllergies');
 				
-				errMsg.innerHTML = "";
+				errMsg.innerHTML = "";		
 				getSexType.style.border = "1px solid black";
 				getPatientFirst.style.border = "1px solid black";
 				getPatientLast.style.border = "1px solid black";
 				getDrugAllergies.style.border = "1px solid black";
 				
 				var messageAry = [];
-					if(getSexType.value === "<-Select Sex->"){
-						var  sexTypeError = "Please Enter Genre";
+					if(getSexType.value === "<-Select Gender->"){
+						var  sexTypeError = "Please Enter Gender";
 						getSexType.style.border = "1px solid red";
 						messageAry.push(sexTypeError);
-	}
+}
 					if(getPatientFirst.value === ""){
 							var  patientFirstError = "Please Enter First Name";
 							getPatientFirst.style.border = "1px solid red";
 							messageAry.push(patientFirstError);
-	}
+}
 					if(getPatientLast.value === ""){
 							var  patientLastError = "Please Enter Last Name";
 							getPatientLast.style.border = "1px solid red";
 							messageAry.push(patientLastError);
-	}						
+}						
 					if(getDrugAllergies.value === ""){
 							var  drugAllergiesError = "Please Enter Drug Allergies";
 							drugAllergies.style.border = "1px solid red";
 							messageAry.push(drugAllergiesError);
-
-	}
+							alert("Please Fill Out All Required Fields");
+}
 					if(messageAry.length >= 1) {
 						for(var i = 0,  j = messageAry.length;  i < j;  i++){
 							var txt = document.createElement('li');
 							txt.innerHTML = messageAry[i];
-							errMsg.appendChild(txt);
-	}
+							errMsg.appendChild(txt);						
+}
 	
 					e.preventDefault();
 					return false;
@@ -242,7 +243,7 @@ window.addEventListener("DOMContentLoaded", function(){
 					alert("Patient was deleted!");
 					window.location.reload();
 				}else{	
-						alert("Patient was NOT deleted.");
+					alert("Patient was NOT deleted.");
 	}
 }
 
@@ -259,7 +260,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 }
 
-				var sexTypes = [ "<-Select Sex->", "Male", "Female", "Unknown", "Alien" ];
+				var sexTypes = [ "<-Select Gender->", "Male", "Female", "Unknown", "Alien" ];
 				makeSexTypes();
 				errMsg = $('errors');
 				

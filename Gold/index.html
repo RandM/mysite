@@ -4,6 +4,7 @@ Randall Mathews
 MIU 1209
 Week 3 Project 3
 09/13/2012
+Gold
 -->
 
 
@@ -36,11 +37,11 @@ Week 3 Project 3
 <!--page-->
 	
 	<div data-role="page">
-		<div data-role="header" data-position="fixed" data-transition="slide" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
 			<h1>Patient Info</h1>
 		</div>
 		<div data-role="content">
-			<p><a href="#two"> <img id="Logo" src="img/imglogo.png"></a></p>
+			<p><a href="#addPatient" data-ajax="false"> <img id="logo" src="img/imglogo.png"></a></p>
 		</div>
 		
 	<div data-role="content">
@@ -60,14 +61,14 @@ Week 3 Project 3
 			    <li><a href="home">Home</a></li>
 				<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/MIU/">Links</a></li>
 				<li><a href="http://touch.krqe.com/">News</a></li>
-				<li><a href="http://randm.github.com/mysite/Bronze/index.html" data-theme="e">Bronze</a></li>
+				<li><a href="http:/randm.github.com/mysite/Bronze/" data-theme="e">Bronze</a></li>
 			</ul>
 		</div>
 	</div>		
 		
 	</div>
 
-<!--page two-->	
+<!--page-->	
 	
 	<div data-role="page" id="two" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed" data-theme="b">
@@ -142,7 +143,7 @@ Week 3 Project 3
 						<li><a href="index.html">Home</a></li>
 						<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/MIU/">Links</a></li>
 						<li><a href="http://touch.krqe.com/">News</a></li>
-						<li><a href="http://randm.github.com/mysite/Bronze/index.html" data-theme="e">Bronze</a></li>
+						<li><a href="http:/randm.github.com/mysite/Bronze/" data-theme="e">Bronze</a></li>
 					</ul>
 		</div>		
 	</div>
@@ -150,7 +151,7 @@ Week 3 Project 3
 	</div>
 
 
-<!--page three-->
+<!--page-->
 
 
 <div data-role="page" id="three" data-add-back-btn="true">
@@ -227,15 +228,48 @@ Week 3 Project 3
 					<li><a href="index.html">Home</a></li>
 					<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/MIU/">Links</a></li>
 					<li><a href="http://touch.krqe.com/">News</a></li>
-					<li><a href="http://randm.github.com/mysite/Bronze/index.html" data-theme="e">Bronze</a></li>
+					<li><a href="/Users/halfdeth/Desktop/repo-mstr/MIU/Week 2/Bronze/" data-theme="e">Bronze</a></li>
 				</ul>
 			</div>		
 	</div>
 	
 	</div>	
 
+<!--page-->
 
+	<div data-role="page" id="addPatient" data-add-back-btn="true">
 
+		<div data-role="header" data-position="fixed" data-theme="b">
+	      	<h1>Add Patient</h1>
+		</div>
+
+		<div data-role="fieldcontain">
+			<label for="sex type">Select Gender:</label>
+			<select name="sex type" id="sexType" data-native-menu="true">	
+			<option data-placeholder="true" ajax->Please Choose One</option>	
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="unknown">Unknown</option>
+				<option value="alien">Alien</option>
+			</select>
+		</div>
+
+			<div data-role="content">
+				<form action="" method="post" id="addPatientForm">		
+				<div data-role="fieldcontain">
+					<label for="fName">First Name:</label>
+					<option data-placeholder="true"></option>
+					<input type="text" name="fName" id="fName">
+					<p>Please enter your first name</p>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="lName">Last Name:</label>
+					<input type="text" name="lName" id="lName">
+					<p>Please enter your last name</p>
+				</div>
+				</form>	
+			</div>
+	</div>
 
 
 	<!-- JavaScript under here -->

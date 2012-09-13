@@ -1,8 +1,8 @@
 /*
 Randall Mathews
 MIU 1209
-Week 1 Project 1
-08/30/2012
+Week 3 Project 3
+09/13/2012
 */
 
 var json = {
