@@ -246,7 +246,7 @@ Gold
 		<div data-role="fieldcontain">
 			<label for="sex type">Select Gender:</label>
 			<select name="sex type" id="sexType" data-native-menu="true">	
-			<option data-placeholder="true" ajax->Please Choose One</option>	
+			<option data-placeholder="true">Please Choose One</option>	
 				<option value="male">Male</option>
 				<option value="female">Female</option>
 				<option value="unknown">Unknown</option>
@@ -259,18 +259,61 @@ Gold
 				<div data-role="fieldcontain">
 					<label for="fName">First Name:</label>
 					<option data-placeholder="true"></option>
-					<input type="text" name="fName" id="fName">
-					<p>Please enter your first name</p>
+					<input type="text" name="fName" id="fName" placeholder="Please Enter First Name"/>
 				</div>
+
 				<div data-role="fieldcontain">
 					<label for="lName">Last Name:</label>
-					<input type="text" name="lName" id="lName">
-					<p>Please enter your last name</p>
+					<input type="text" name="lName" id="lName" placeholder="Please Enter Last Name"/>
 				</div>
-				</form>	
+
+				<div data-role="fieldcontain">
+					<label for="age">Age of Patient:</label>
+					<input type="number" name="age" id="age" value="" />
+				</div>
+
+				<div data-role="fieldcontain">
+					<label for="date">Date:</label>
+					<input type="date" name="date" id="date" value=""/>
+				</div>
+
+				<div data-role="fieldcontain">
+					<label for="allergies">Drug Alergies:</label>
+					<option data-placeholder="true"></option>
+					<input type="text" name="allergies" id="allergies" placeholder="Please Enter Known Drug Allergies"/>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup"/>
+						<input type="checkbox" name="checkbox" id="checkbox" class="custom"/>
+						<label for="checkbox">No Drug Allergies or Unknown</label>
+					</fieldset>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="currentmeds">Current Medication:</label>
+					<option data-placeholder="true"></option>
+					<input type="text" name="currentmeds" id="currentmeds" placeholder="Please Enter Current Medication"/>
+					<label for="slider">Dosage:</label/>
+					<input type="range" name="slider" id="slider" value="0" min="0" max="1000"/>	
+				</div>
+
+				<div data-role="fieldcontain">
+					<label for="comments">Comments:</label/>
+					<textarea name="textarea" id="textarea" placeholder="Additional Comments Here"/>
+					</textarea>		
+				</div>	
+				
+				<div>	
+					<input type="submit" value="Submit Patient" data-theme="b"/></br>
+					<input type="reset" value="Clear Entered Data" data-theme="a"/>
+				</div>
 			</div>
+		</form>	
+		</div>
 	</div>
 
+	
 
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
