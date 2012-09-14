@@ -1,16 +1,17 @@
-$('#home').on('pageinit', function(){
-	//code needed for home page goes here
-});	
-		
-$('#addItem').on('pageinit', function(){
 
-		var myForm = $('#formId');
+		
+var patientInfo = function(data){
+};
+
+$('#addPatient').on('pageinit', function(){
+
+		var myForm = $("#addPatientForm");
 		    myForm.validate({
 			invalidHandler: function(form, validator) {
 			},
 			submitHandler: function() {
 		var data = myForm.serializeArray();
-			storeData(data);
+			patientInfo(data);
 		}
 	});
 	
@@ -29,6 +30,27 @@ var getData = function(){
 };
 
 var storeData = function(data){
+	if(!data){
+			var id 							= Math.floor( Math.random() * 1000001 );
+		}else{
+			id = data;
+	
+}
+			getCheckboxValue();
+			var item 						= {};
+				item.sextype 				= ["Gender:" , $('sexTypes').value];
+				item.patientFirst 			= ["First Name:" , $('patientFirst').value];
+				item.patientLast 			= ["Last Name:" , $('patientLast').value];
+				item.patientAge 			= ["Age of Patient:" , $('patientAge').value];
+				item.patientDate 			= ["Date Added:" , $('patientDate').value];
+				item.drugAllergies 			= ["Drug Allergies:" , $('drugAllergies').value];
+				item.allergy 				= ["Unknown Allergies:" , allergyValue];
+				item.curMeds 				= ["Current Meds:" , $('curMeds').value];
+				item.doseMg 				= ["Dose in MG:" , $('doseMg').value];
+				item.comments 				= ["Comments:" , $('comments').value];
+
+			localStorage.setItem( id, JSON.stringify(item));
+			alert("Patient Added!");
 	
 }; 
 

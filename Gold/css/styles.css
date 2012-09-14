@@ -9,9 +9,10 @@ Gold
 
 
 
-.ui-page { 
--webkit-backface-visibility: hidden; 
-} 
+.ui-body-c {
+color:white;
+text-shadow:black;
+}
 
 .ui-page { 
 background: #346699;
@@ -21,6 +22,11 @@ background: #346699;
 background: #346699;
 }
 
+label.error {
+	display:block;
+	margin:5px 0;
+	color:#c02727;
+}
 
 /*
 body{

@@ -61,7 +61,7 @@ Gold
 			    <li><a href="home">Home</a></li>
 				<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/MIU/">Links</a></li>
 				<li><a href="http://touch.krqe.com/">News</a></li>
-				<li><a href="http:/randm.github.com/mysite/Bronze/" data-theme="e">Bronze</a></li>
+				<li><a href="http:/randm.github.com/mysite/Bronze/index.html" data-theme="e">Bronze</a></li>
 			</ul>
 		</div>
 	</div>		
@@ -143,7 +143,7 @@ Gold
 						<li><a href="index.html">Home</a></li>
 						<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/MIU/">Links</a></li>
 						<li><a href="http://touch.krqe.com/">News</a></li>
-						<li><a href="http:/randm.github.com/mysite/Bronze/" data-theme="e">Bronze</a></li>
+						<li><a href="http:/randm.github.com/mysite/Bronze/index.html" data-theme="e">Bronze</a></li>
 					</ul>
 		</div>		
 	</div>
@@ -228,7 +228,7 @@ Gold
 					<li><a href="index.html">Home</a></li>
 					<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/MIU/">Links</a></li>
 					<li><a href="http://touch.krqe.com/">News</a></li>
-					<li><a href="/Users/halfdeth/Desktop/repo-mstr/MIU/Week 2/Bronze/" data-theme="e">Bronze</a></li>
+					<li><a href="http:/randm.github.com/mysite/Bronze/index.html/" data-theme="e">Bronze</a></li>
 				</ul>
 			</div>		
 	</div>
@@ -245,7 +245,7 @@ Gold
 
 		<div data-role="fieldcontain">
 			<label for="sex type">Select Gender:</label>
-			<select name="sex type" id="sexType" data-native-menu="true">	
+			<select name="sex type" id="sexType" data-native-menu="true" class="required">	
 			<option data-placeholder="true">Please Choose One</option>	
 				<option value="male">Male</option>
 				<option value="female">Female</option>
@@ -259,17 +259,17 @@ Gold
 				<div data-role="fieldcontain">
 					<label for="fName">First Name:</label>
 					<option data-placeholder="true"></option>
-					<input type="text" name="fName" id="fName" placeholder="Please Enter First Name"/>
+					<input type="text" name="fName" id="fName" placeholder="Please Enter First Name" class="required"/>
 				</div>
 
 				<div data-role="fieldcontain">
 					<label for="lName">Last Name:</label>
-					<input type="text" name="lName" id="lName" placeholder="Please Enter Last Name"/>
+					<input type="text" name="lName" id="lName" placeholder="Please Enter Last Name" class="required"/>
 				</div>
 
 				<div data-role="fieldcontain">
 					<label for="age">Age of Patient:</label>
-					<input type="number" name="age" id="age" value="" />
+					<input type="number" name="age" id="age" value="0" />
 				</div>
 
 				<div data-role="fieldcontain">
@@ -280,7 +280,7 @@ Gold
 				<div data-role="fieldcontain">
 					<label for="allergies">Drug Alergies:</label>
 					<option data-placeholder="true"></option>
-					<input type="text" name="allergies" id="allergies" placeholder="Please Enter Known Drug Allergies"/>
+					<input type="text" name="allergies" id="allergies" placeholder="Please Enter Known Drug Allergies" class="required"/>
 				</div>
 				
 				<div data-role="fieldcontain">
@@ -318,8 +318,9 @@ Gold
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
-	<script src="js/json.js" type="text/javascript"></script>	
-	<script src="js/main.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/json.js"></script>	
+	<script type="text/javascript" src="js/main1.js" ></script>
 
 </body>
 </html>
