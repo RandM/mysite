@@ -1,5 +1,17 @@
 
-		
+/*
+Randall Mathews
+MIU 1209
+Week 3 Project 3
+09/13/2012
+Gold
+*/
+
+
+
+
+
+
 var patientInfo = function(data){
 };
 

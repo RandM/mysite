@@ -138,13 +138,13 @@ Gold
 
 			
 		<div data-role="footer" data-position="fixed"   data-theme="b">
-				<div data-role="navbar">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/MIU/">Links</a></li>
-						<li><a href="http://touch.krqe.com/">News</a></li>
-						<li><a href="http:/randm.github.com/mysite/Bronze/index.html" data-theme="e">Bronze</a></li>
-					</ul>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/MIU/">Links</a></li>
+				<li><a href="http://touch.krqe.com/">News</a></li>
+				<li><a href="http:/randm.github.com/mysite/Bronze/index.html" data-theme="e">Gold</a></li>
+			</ul>
 		</div>		
 	</div>
 	
@@ -223,14 +223,14 @@ Gold
 
 			
 	<div data-role="footer" data-position="fixed" data-theme="b">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/MIU/">Links</a></li>
-					<li><a href="http://touch.krqe.com/">News</a></li>
-					<li><a href="http:/randm.github.com/mysite/Bronze/index.html/" data-theme="e">Bronze</a></li>
-				</ul>
-			</div>		
+		<div data-role="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/MIU/">Links</a></li>
+				<li><a href="http://touch.krqe.com/">News</a></li>
+				<li><a href="http:/randm.github.com/mysite/Bronze/index.html" data-theme="e">Gold</a></li>
+			</ul>
+		</div>		
 	</div>
 	
 	</div>	
@@ -254,62 +254,70 @@ Gold
 			</select>
 		</div>
 
-			<div data-role="content">
-				<form action="" method="post" id="addPatientForm">		
-				<div data-role="fieldcontain">
-					<label for="fName">First Name:</label>
-					<option data-placeholder="true"></option>
-					<input type="text" name="fName" id="fName" placeholder="Please Enter First Name" class="required"/>
-				</div>
-
-				<div data-role="fieldcontain">
-					<label for="lName">Last Name:</label>
-					<input type="text" name="lName" id="lName" placeholder="Please Enter Last Name" class="required"/>
-				</div>
-
-				<div data-role="fieldcontain">
-					<label for="age">Age of Patient:</label>
-					<input type="number" name="age" id="age" value="0" />
-				</div>
-
-				<div data-role="fieldcontain">
-					<label for="date">Date:</label>
-					<input type="date" name="date" id="date" value=""/>
-				</div>
-
-				<div data-role="fieldcontain">
-					<label for="allergies">Drug Alergies:</label>
-					<option data-placeholder="true"></option>
-					<input type="text" name="allergies" id="allergies" placeholder="Please Enter Known Drug Allergies" class="required"/>
-				</div>
-				
-				<div data-role="fieldcontain">
-					<fieldset data-role="controlgroup"/>
-						<input type="checkbox" name="checkbox" id="checkbox" class="custom"/>
-						<label for="checkbox">No Drug Allergies or Unknown</label>
-					</fieldset>
-				</div>
-				
-				<div data-role="fieldcontain">
-					<label for="currentmeds">Current Medication:</label>
-					<option data-placeholder="true"></option>
-					<input type="text" name="currentmeds" id="currentmeds" placeholder="Please Enter Current Medication"/>
-					<label for="slider">Dosage:</label/>
-					<input type="range" name="slider" id="slider" value="0" min="0" max="1000"/>	
-				</div>
-
-				<div data-role="fieldcontain">
-					<label for="comments">Comments:</label/>
-					<textarea name="textarea" id="textarea" placeholder="Additional Comments Here"/>
-					</textarea>		
-				</div>	
-				
-				<div>	
-					<input type="submit" value="Submit Patient" data-theme="b"/></br>
-					<input type="reset" value="Clear Entered Data" data-theme="a"/>
-				</div>
+		<div data-role="content">
+			<form action="" method="post" id="addPatientForm">		
+			<div data-role="fieldcontain">
+				<label for="fName">First Name:</label>
+				<option data-placeholder="true"></option>
+				<input type="text" name="fName" id="fName" placeholder="Please Enter First Name" class="required">
 			</div>
-		</form>	
+
+			<div data-role="fieldcontain">
+				<label for="lName">Last Name:</label>
+				<input type="text" name="lName" id="lName" placeholder="Please Enter Last Name" class="required">
+			</div>
+
+			<div data-role="fieldcontain">
+				<label for="age">Age of Patient:</label>
+				<input type="number" name="age" id="age" value="0">
+			</div>
+
+			<div data-role="fieldcontain">
+				<label for="date">Date:</label>
+				<input type="date" name="date" id="date">
+			</div>
+
+			<div data-role="fieldcontain">
+				<label for="allergies">Drug Alergies:</label>
+				<option data-placeholder="true"></option>
+				<input type="text" name="allergies" id="allergies" placeholder="Please Enter Known Drug Allergies" class="required">
+			</div>
+			
+			<div data-role="fieldcontain">
+				<fieldset data-role="controlgroup">
+					<input type="checkbox" name="checkbox" id="checkbox" class="custom">
+					<label for="checkbox">No Drug Allergies or Unknown</label>
+				</fieldset>
+			</div>
+			
+			<div data-role="fieldcontain">
+				<label for="currentmeds">Current Medication:</label>
+				<option data-placeholder="true"></option>
+				<input type="text" name="currentmeds" id="currentmeds" placeholder="Please Enter Current Medication">
+				<label for="slider">Dosage:</label>
+				<input type="range" name="slider" id="slider" value="0" min="0" max="1000">	
+			</div>
+
+			<div data-role="fieldcontain">
+				<label for="comments">Comments:</label>
+				<textarea name="textarea" id="textarea" placeholder="Additional Comments Here"></textarea>		
+			</div>	
+			
+			<div>	
+				<input type="submit" value="Submit Patient" data-theme="b"></br>
+				<input type="reset" value="Clear Entered Data" data-theme="a">
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/MIU/">Links</a></li>
+						<li><a href="http://touch.krqe.com/">News</a></li>
+						<li><a href="http:/randm.github.com/mysite/Bronze/index.html" data-theme="e">Gold</a></li>
+					</ul>
+				</div>		
+			</div>		
+			</form>
 		</div>
 	</div>
 
