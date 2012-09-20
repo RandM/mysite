@@ -13,6 +13,7 @@ Gold
 
 
 var patientInfo = function(data){
+//console.log(data);
 };
 
 $('#addPatient').on('pageinit', function(){
@@ -33,19 +34,52 @@ $('#addPatient').on('pageinit', function(){
 
 //The functions below can go inside or outside the pageinit function for the page in which it is needed.
 
-var autofillData = function (){
-	 
-};
+function autoFillData(){
+				for(var n in json){
+					var id = Math.floor(Math.random() * 1000001);
+					localStorage.setItem(id, JSON.stringify(json[n]));
+		
+	}
+}
 
-var getData = function(){
+function getData(){
+		toggleControls( "on" );
+			if( localStorage.length === 0 ){
+				alert( "You have no saved patients. Now loading default patient data." );
+				autoFillData();
+}
+				var makeDiv = document.createElement('div');
+				makeDiv.setAttribute("id", "items");
+				var makeList = document.createElement('ul');
+				makeDiv.appendChild( makeList );
+				document.body.appendChild( makeDiv );
+				$( 'items' ).style.display = "block";
+			for( var i = 0, j = localStorage.length; i < j;  i++ ){
+				var makeLi = document.createElement('li');
+				var linksLi =document.createElement('li');
+				makeList.appendChild(makeLi);
+				var key = localStorage.key(i);
+				var value = localStorage.getItem(key);
+				var obj = JSON.parse(value);
+				var makeSubList = document.createElement('ul');
+				makeLi.appendChild( makeSubList );
+				getImage(obj.sextype[1], makeSubList);
+			for( var n in obj ){
+				var makeSubLi = document.createElement('li');
+				makeSubList.appendChild( makeSubLi );
+				var optSubText = obj[n][0] + " " + obj[n][1];
+				makeSubLi.innerHTML = optSubText;
+				makeSubList.appendChild(linksLi);
+		}
+			makeItemLinks(localStorage.key(i), linksLi);
+	}
+}
 
-};
-
-var storeData = function(data){
-	if(!data){
-			var id 							= Math.floor( Math.random() * 1000001 );
-		}else{
-			id = data;
+function storeData(data){
+			if(!key){
+				var id 						= Math.floor( Math.random() * 1000001 );
+			}else{
+				id = key;
 	
 }
 			getCheckboxValue();
@@ -63,8 +97,7 @@ var storeData = function(data){
 
 			localStorage.setItem( id, JSON.stringify(item));
 			alert("Patient Added!");
-	
-}; 
+}
 
 var	deleteItem = function (){
 			

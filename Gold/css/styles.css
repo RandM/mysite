@@ -7,18 +7,30 @@ Gold
 */
 
 
+#head {
+	margin: 0 auto;
+	padding: 0 auto;
+}
 
+.ui-header {
+	color: white;
+}
 
-.ui-body-c {
-	color:000;
+.ui-body-a {
+	background-image: url(img/bokehbg.png);
 }
 
 .ui-page { 
-	background: #346699;
+	background-image: url(img/bokehbg.png);
+	background-attachment: fixed;
+	background-size: 140%;
 }
 
 .ui-content { 
-	background: #346699;
+	background-image: url(img/bokehbg.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 label.error {
