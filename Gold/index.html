@@ -38,7 +38,7 @@ Gold
 	
 	 	<div data-role="page" style="background: url('img/bokehbg1.jpg')">
 		<div data-role="header" data-position="fixed" data-theme="a">
-			<p><a href="home" data-ajax="false"> <img id="head" src="img/ptlogo2.png"></a></p>
+			<p><a href="home" data-ajax="false"> <img id="head" src="img/ptlogo5.png"></a></p>
 		</div>
 			
 		
@@ -47,7 +47,7 @@ Gold
 		</div>
 		
 	<div data-role="content">
-		<ul data-role="listview" data-dividertheme="b" data-inset="true" data-filter="true">
+		<ul data-role="listview" data-dividertheme="a" data-inset="true" data-filter="true">
 			  <li data-role="list-divider">BROWSE BY GENDER</li>
 			  <li><a href="#two">MALE</a></li>
 			  <li><a href="#three">FEMALE</a></li>
@@ -73,7 +73,7 @@ Gold
 <!--page-->	
 	
 	<div data-role="page" id="two" data-add-back-btn="true">
-		<p><a href="index.html"> <img id="head2" src="img/ptlogo2.png"></a></p></br>
+		<p><a href="index.html"> <img id="head2" src="img/ptlogo5.png"></a></p></br>
 
 	
 	 
@@ -155,12 +155,11 @@ Gold
 <!--page-->
 
 
-<div data-role="page" id="three" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed" data-theme="a">
-			<h1>Female Patient List</h1>
-		</div>
+	<div data-role="page" id="three" data-add-back-btn="true">	
+		<p><a href="index.html"> <img id="head" src="img/ptlogo5.png"></a></p></br>
+		
 
-<div data-role="collapsible">
+	<div data-role="collapsible">
    	<h3>Female Patients A - M</h3>	
    			<ul data-role="listview" data-filter="true">				
 				<li>
@@ -239,7 +238,7 @@ Gold
 <!--page-->
 
 	<div data-role="page" id="addPatient" data-add-back-btn="true" style="background: url('img/bokehbg1.jpg')">
-		<p><a href="index.html"> <img id="head1" src="img/ptlogo2.png"></a></p></br></br>
+		<p><a href="index.html"> <img id="head1" src="img/ptlogo5.png"></a></p></br></br>
 
 
 		<div data-role="fieldcontain">
@@ -276,25 +275,19 @@ Gold
 				<input type="date" name="date" id="date">
 			</div>
 
-			<div data-role="fieldcontain">
-				<label for="allergies">Drug Alergies:</label>
-				<option data-placeholder="true"></option>
-				<input type="text" name="allergies" id="allergies" placeholder="Please Enter Known Drug Allergies" class="required">
-			</div>
-			
+		
 			<div data-role="fieldcontain">
 				<fieldset data-role="controlgroup">
+				<label for="allergies">Drug Alergies:</label>
+				<option data-placeholder="true"></option>
+				<input type="text" name="allergies" id="allergies" placeholder="Please Enter Known Drug Allergies" class="required">	
 					<input type="checkbox" name="checkbox" id="checkbox" class="custom">
+					<input type="checkbox" name="checkbox" id="checkbox1" class="custom">
 					<label for="checkbox">No Drug Allergies</label>
+					<label for="checkbox1">Unknown Drug Allergies</label>
 				</fieldset>
 			</div>
 
-			<div data-role="fieldcontain">
-				<fieldset data-role="controlgroup">
-					<input type="checkbox" name="checkbox" id="checkbox" class="custom">
-					<label for="checkbox">Unknown Drug Allergies</label>
-				</fieldset>
-			</div>
 			
 			<div data-role="fieldcontain">
 				<label for="currentmeds">Current Medication:</label>
