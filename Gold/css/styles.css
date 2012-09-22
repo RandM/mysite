@@ -8,35 +8,54 @@ Gold
 
 
 #head {
-	margin: 0 auto;
-	padding: 0 auto;
+	position: absolute;
+	margin: -20px 0px 0px 0px;
 }
 
-.ui-header {
-	color: white;
+#head1 {
+	position: absolute;
+	margin: -20px 0px 0px 0px;
 }
 
-.ui-body-a {
-	background-image: url(img/bokehbg.png);
+#head2 {
+	position: absolute;
+	margin: -20px 0px 0px 0px;
 }
 
-.ui-page { 
-	background-image: url(img/bokehbg.png);
-	background-attachment: fixed;
-	background-size: 140%;
+#logo {
+	margin: 40px 0px 20px 0px;
 }
 
-.ui-content { 
-	background-image: url(img/bokehbg.jpg);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: 100%;
+
+.ui-content {
+	color:#333;
+	background:;
 }
 
 label.error {
 	display:block;
-	margin:5px 0;
-	color:#c02727;
+	margin: 5px 0;
+	color: #c02727;
+}
+
+.ui-page { 
+	background-image: url(img/bokehbg1.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+#addPatient {
+	background-image: url(img/bokehbg1.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+
+
+
+
+#news {
+	background-color:red;
 }
 
 /*

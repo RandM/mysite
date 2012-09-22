@@ -36,11 +36,12 @@ Gold
 
 <!--page-->
 	
-	<div data-role="page" style="background: url('img/bokehbg.png')">
+	 	<div data-role="page" style="background: url('img/bokehbg1.jpg')">
 		<div data-role="header" data-position="fixed" data-theme="a">
-			<p><a href="#home" data-ajax="false"> <img id="head" src="img/ptlogo2.png"></a></p>
-			
+			<p><a href="home" data-ajax="false"> <img id="head" src="img/ptlogo2.png"></a></p>
 		</div>
+			
+		
 		<div data-role="content">
 			<p><a href="#addPatient" data-ajax="false"> <img id="logo" src="img/imglogo.png"></a></p>
 		</div>
@@ -61,7 +62,7 @@ Gold
 			<ul>
 			    <li><a href="home">Home</a></li>
 				<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/MIU/">Links</a></li>
-				<li><a href="http://touch.krqe.com/">News</a></li>
+				<li><a href="http://touch.krqe.com/" id="news ">News</a></li>
 				<li><a href="http:/randm.github.com/mysite/Bronze/index.html" data-theme="a">Bronze</a></li>
 			</ul>
 		</div>
@@ -72,9 +73,8 @@ Gold
 <!--page-->	
 	
 	<div data-role="page" id="two" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed" data-theme="a">
-			<h1>Male Patient List</h1>
-		</div>
+		<p><a href="index.html"> <img id="head2" src="img/ptlogo2.png"></a></p></br>
+
 	
 	 
 	<div data-role="collapsible">
@@ -138,13 +138,13 @@ Gold
 		</div>
 
 			
-		<div data-role="footer" data-position="fixed"   data-theme="b">
+		<div data-role="footer" data-position="fixed"   data-theme="a">
 		<div data-role="navbar">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="https://github.com/Randm/repo-mstr/tree/DaBranch/MIU/">Links</a></li>
 				<li><a href="http://touch.krqe.com/">News</a></li>
-				<li><a href="http:/randm.github.com/mysite/Bronze/index.html" data-theme="a">Gold</a></li>
+				<li><a href="http:/randm.github.com/mysite/Bronze/index.html" data-theme="a">Bronze</a></li>
 			</ul>
 		</div>		
 	</div>
@@ -238,15 +238,13 @@ Gold
 
 <!--page-->
 
-	<div data-role="page" id="addPatient" data-add-back-btn="true">
+	<div data-role="page" id="addPatient" data-add-back-btn="true" style="background: url('img/bokehbg1.jpg')">
+		<p><a href="index.html"> <img id="head1" src="img/ptlogo2.png"></a></p></br></br>
 
-		<div data-role="header" data-position="fixed" data-theme="a">
-	      	<h1>Add Patient</h1>
-		</div>
 
 		<div data-role="fieldcontain">
 			<label for="sex type">Select Gender:</label>
-			<select name="sex type" id="sexType" data-native-menu="true" class="required">	
+			<select name="sex type" id="sexType" data-native-menu="true" class="required" >	
 			<option data-placeholder="true">Please Choose One</option>	
 				<option value="male">Male</option>
 				<option value="female">Female</option>
@@ -336,7 +334,7 @@ Gold
 	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
 	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/json.js"></script>	
-	<script type="text/javascript" src="js/main2.js" ></script>
+	<script type="text/javascript" src="js/main.js" ></script>
 
 </body>
 </html>

@@ -3,23 +3,36 @@ Randall Mathews
 MIU 1209
 Week 3 Project 3
 09/13/2012
+Gold
 */
 
 
-
-
-.ui-page { 
--webkit-backface-visibility: hidden; 
-} 
-
-.ui-page { 
-background: #346699;
+#head {
+	position: absolute;
+	margin: -20px 0px 0px 0px;
 }
 
-.ui-content { 
-background: #346699;
+#logo {
+	margin: 40px 0px 20px -5px;
 }
 
+.ui-content {
+	color:#333;
+	background:;
+}
+
+.ui-page { 
+	background-image: url(img/bokehbg.jpg);
+	background-attachment: fixed;
+	background-size: 140%;
+
+}
+
+label.error {
+	display:block;
+	margin:5px 0;
+	color:#c02727;
+}
 
 /*
 body{
