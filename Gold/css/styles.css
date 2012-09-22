@@ -1,8 +1,8 @@
 /*
 Randall Mathews
 MIU 1209
-Week 3 Project 3
-09/13/2012
+Week 4 Project 4
+09/20/2012
 Gold
 */
 
@@ -27,10 +27,10 @@ Gold
 }
 
 .ui-body-c {
-	color: black;
-	font-weight: 600;
-	text-shadow: 1px 2px 2px white;
+	color: white;
+	font-weight: 400;
 	background-color: #353335;
+	border-color: black;
 }
 
 .ui-content {
@@ -61,11 +61,6 @@ label.error {
 
 
 
-
-
-#news {
-	background-color:red;
-}
 
 /*
 body{
