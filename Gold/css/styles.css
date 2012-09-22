@@ -22,8 +22,20 @@ Gold
 	margin: -20px 0px 0px 0px;
 }
 
+h3 {
+	color: black;
+}
+
+p {
+	color: #3f3e44;
+}
+
 #logo {
 	margin: 40px 0px 20px 0px;
+}
+
+.ui-body-a {
+	background: #353335;
 }
 
 .ui-body-c {
